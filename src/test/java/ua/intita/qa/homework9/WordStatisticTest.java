@@ -22,7 +22,7 @@ public class WordStatisticTest {
 
     @Test
     public void countNumberConsonants() {
-        final int countNum = wordStatistic.countNumberConsonants("victory");
+        final int countNum = wordStatistic.countNumberConsonants("Victory");
         assertEquals(4, countNum);
     }
 
