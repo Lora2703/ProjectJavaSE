@@ -16,8 +16,8 @@ public class WordStatisticTest {
 
     @Test
     public void countNumberVowels() {
-        final int countNum = wordStatistic.countNumberVowels("victory");
-        assertEquals(3, countNum);
+        final int countNum = wordStatistic.countNumberVowels("Intro");
+        assertEquals(2, countNum);
     }
 
     @Test
@@ -36,5 +36,12 @@ public class WordStatisticTest {
     public void countComas() {
         final int countComas = wordStatistic.countComas("Citius, altius, fortius.");
         assertEquals(2, countComas);
+    }
+    @Test
+    public void countNumberUppercaseVowels() {
+        final int countNum = wordStatistic.countNumberVowels("Intro");
+        assertEquals(2, countNum);
+
+
     }
 }

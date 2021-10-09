@@ -10,7 +10,8 @@ public class WordStatistic implements Statists {
 
     @Override
     public int countNumberVowels(String word) {
-        char[] cWord = word.toCharArray();
+        String lWord = word.toLowerCase();
+        char[] cWord = lWord.toCharArray();
         int countVowels = 0;
         for (char c : cWord) {
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y') {
