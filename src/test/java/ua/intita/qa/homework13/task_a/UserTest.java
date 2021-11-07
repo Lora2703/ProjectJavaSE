@@ -4,6 +4,8 @@ import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class UserTest {
     private User user;
 
@@ -15,7 +17,7 @@ public class UserTest {
     @Test
     public void setRightFirstNameTest() throws IllegalNameException {
         user.setFirstName("Bob");
-        TestCase.assertEquals(user.getFirstName(), "Bob");
+        assertEquals(user.getFirstName(), "Bob");
     }
 
     @Test(expected = IllegalNameException.class)
@@ -36,7 +38,7 @@ public class UserTest {
     @Test
     public void setRightAgeTest() throws IllegalAgeException {
         user.setAge(25);
-        TestCase.assertEquals(user.getAge(), 25);
+        assertEquals(user.getAge(), 25);
     }
 
     @Test(expected = IllegalAgeException.class)
