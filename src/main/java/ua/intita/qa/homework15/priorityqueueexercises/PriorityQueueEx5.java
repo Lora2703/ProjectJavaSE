@@ -1,0 +1,18 @@
+package ua.intita.qa.homework15.priorityqueueexercises;
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueEx5 {
+        public static void main(String[] args) {
+            PriorityQueue<String> colorPriorityQueue = new PriorityQueue<>();
+            colorPriorityQueue.add("white");
+            colorPriorityQueue.add("black");
+            colorPriorityQueue.add("red");
+            colorPriorityQueue.add("green");
+            colorPriorityQueue.add("yellow");
+
+            System.out.println(colorPriorityQueue);
+            colorPriorityQueue.clear();
+            System.out.println(colorPriorityQueue);
+    }
+}
