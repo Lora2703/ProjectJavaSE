@@ -13,11 +13,12 @@ public class Album {
     private String albumId;
     private String performerName;
     private String albumName;
-    private int releaseYear;
-    private int songCount;
+    private String releaseYear;
+    private String songCount;
 
     public Album(){
         albumId = UUID.randomUUID().toString();
     }
+
 
 }
