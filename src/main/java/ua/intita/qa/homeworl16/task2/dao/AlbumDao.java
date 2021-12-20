@@ -1,13 +1,19 @@
 package ua.intita.qa.homeworl16.task2.dao;
 
 import ua.intita.qa.homeworl16.task2.entity.Album;
+import ua.intita.qa.homeworl16.task2.util.AlbumUtils;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class AlbumDao implements CommonDao<Album> {
-    private final Map<String, Album> albums = new HashMap<>();
+    private static final Map<String, Album> albums = new HashMap<>();
+
+    static {
+        Map<String, Album> stringAlbumMap = AlbumUtils.readDataFromFile("data/album.csv");
+        albums.putAll(stringAlbumMap);
+    }
 
     @Override
     public Album save(Album album) {
